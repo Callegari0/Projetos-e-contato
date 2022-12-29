@@ -1,0 +1,83 @@
+@import url("./root.css");
+
+main {
+    font-family: var(--font);
+    color: var(--color-white);
+}
+
+.main-title-size,
+.main-contact-size {
+    padding: 1.5em;
+    text-align: center;
+    font-size: 20px;
+}
+
+.main-div-principal-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-div-span-style {
+    width: 24%;
+    height: 220px;
+    background-color: var(--color-black);
+    margin: 0.5em;
+    border: 1px solid var(--color-white);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.main-div-span-transition {
+    opacity: 0.5;
+    transition: all 0.5s ease-out 0s;
+}
+
+.main-div-span-transition:hover {
+    opacity: 1;
+}
+
+.main-div-span-style a {
+    text-decoration: none;
+    color: var(--color-white);
+    margin: 1em;
+}
+
+.main-contact-card-principal {
+    text-align: center;
+    padding: 1em 0 2.5em 0;
+}
+
+.main-contact-card-profile img {
+    border-radius: 100%;
+}
+
+.main-contact-card-profile p {
+    padding-top: 1.2em;
+}
+
+.main-contact-card-profile p a {
+    text-decoration: none;
+    color: var(--color-red);
+    transition: color 0.5s linear 0s;
+}
+
+.main-contact-card-profile p a:hover {
+    color: var(--color-green);
+}
+
+@media screen and (min-width: 0px) and (max-width: 910px) {
+    .main-div-principal-flex {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .main-div-span-style {
+        width: 60%;
+    }
+
+    .main-div-span-transition img {
+        display: none;
+    }
+}

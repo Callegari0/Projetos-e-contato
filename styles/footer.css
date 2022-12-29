@@ -1,0 +1,11 @@
+@import url("./root.css");
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    color: var(--color-white);
+    font-family: var(--font);
+    padding: 6em 0 2em 0;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;400;600&display=swap" rel="stylesheet">
+
+    <title>LuizCallegario</title>
+</head>
+
+<body>
+    <header>
+
+        <section>
+
+            <div class="header-div-principal-flex">
+                <span class="header-span-name-flex">
+                    <img src="./img/LC-logo-ed.svg" class="header-span-logo-inline" alt="Imagem-logo">
+                    <span>
+                        <p>Luiz Callegario</p>
+                        <p>Front-end Developer</p>
+                    </span>
+                </span>
+                <nav>
+                    <ul class="nav-list-flex">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="header-div-history-width" id="inicio">
+
+                <span class="void void-header">void</span>
+
+                <h1>Bem vindo(a).
+                    <span class="portifolio-media-queries">Esta é uma página para meu portifólio.</span>
+                </h1>
+                <p>Olá, meu nome é Luiz Eduardo, tenho 22 anos, sou
+                    do Rio de Janeiro e estudo Sistemas para Internet
+                    com foco na área de programação para
+                    desenvolvimento front-end. Meu objetivo é me
+                    inserir no mercado de programação e futuramente,
+                    me tornar um desenvolvedor. Atualmente, tenho noções
+                    de HTML5, CSS3, JavaScript, SQL, React e Node.</p>
+                <a href="#projetos">
+                    <img src="./img/seta-prosseguir.svg" alt="botão-prosseguir">
+                </a>
+            </div>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <section id="projetos">
+
+            <span class="void">void</span>
+
+            <h2 class="main-title-size">Projetos</h2>
+
+            <div class="main-div-principal-flex">
+
+                <span class="main-div-span-style" data-aos="fade-up">
+                    <span class="main-div-span-transition">
+                        <a href="#">
+                            <h3>Consumo de API com axios </h3>
+                            <img src="./img/em-breve.svg" alt="Manutenção-símbolo">
+                            <p>Em breve...</p>
+                        </a>
+                    </span>
+                </span>
+
+                <span class="main-div-span-style" data-aos="fade-up">
+                    <span class="main-div-span-transition">
+                        <a href="#">
+                            <h3>CRUD com JavaScript </h3>
+                            <img src="./img/em-breve.svg" alt="Manutenção-símbolo">
+                            <p>Em breve...</p>
+                        </a>
+                    </span>
+                </span>
+
+                <span class="main-div-span-style" data-aos="fade-up">
+                    <span class="main-div-span-transition">
+                        <a href="#">
+                            <h3>Formulário com validação </h3>
+                            <img src="./img/em-breve.svg" alt="Manutenção-símbolo">
+                            <p>Em breve...
+                            </p>
+                        </a>
+                    </span>
+                </span>
+
+                <span class="main-div-span-style" data-aos="fade-up">
+                    <span class="main-div-span-transition">
+                        <a href="#">
+                            <h3>Importando dados de uma API para planilha Excel </h3>
+                            <img src="./img/em-breve.svg" alt="Manutenção-símbolo">
+                            <p>Em breve...</p>
+                        </a>
+                    </span>
+                </span>
+
+                <span class="main-div-span-style" data-aos="fade-up">
+                    <span class="main-div-span-transition">
+                        <a href="#">
+                            <h3>Layout responsivo com React </h3>
+                            <img src="./img/em-breve.svg" alt="Manutenção-símbolo">
+                            <p>Em breve...</p>
+                        </a>
+                    </span>
+                </span>
+
+            </div>
+
+        </section>
+
+        <section id="contato">
+
+            <h2 class="main-contact-size">Contato</h2>
+
+            <span class="void">void</span>
+
+            <div class="main-contact-card-principal" data-aos="fade-up">
+                <span class="main-contact-card-profile">
+                    <img src="./img/perfil-contato.svg" alt="Autor-da-página">
+                    <p>Me contate pelo meu LinkedIn clicando
+                        <a target="_blank" href="https://www.linkedin.com/in/luiz-eduardo-perez-callegario-592004187">
+                            aqui
+                        </a>
+                        ou pelo meu e-mail:
+                    </p>
+                    <p>luiz.negociosegestao@gmail.com</p>
+                </span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <section>
+            <p>&#169; 2022 Luiz E. P. Callegario</p>
+        </section>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+</body>
+
+</html>

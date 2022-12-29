@@ -1,0 +1,152 @@
+@import url("./root.css");
+
+header {
+    height: 60vh;
+    background-image: url("../img/cidade-cinza\ 1.svg");
+    background-size: cover;
+    color: var(--color-white);
+}
+
+.void {
+    opacity: 0;
+    font-size: 32px;
+}
+
+.void-header {
+    font-size: 60px;
+}
+
+.header-div-principal-flex {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--font);
+    padding-top: 1.5em;
+}
+
+.header-div-principal-flex.scroll {
+    background-color: var(--color-black);
+}
+
+.header-span-name-flex {
+    display: flex;
+}
+
+.header-span-logo-inline {
+    display: inline;
+}
+
+.nav-list-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list-flex li {
+    padding-right: 2em;
+    transition: all 0.3s linear 0s;
+}
+
+.nav-list-flex li:hover {
+    transform: scale(1.1);
+}
+
+.nav-list-flex li a {
+    text-decoration: underline var(--color-red);
+    color: var(--color-white);
+    transition: all 0.3s linear 0s;
+}
+
+.nav-list-flex li a:hover {
+    text-decoration-color: var(--color-green);
+}
+
+.header-div-history-width {
+    width: 70vw;
+    font-family: var(--font);
+    margin: 12em auto;
+    text-align: center;
+}
+
+.header-div-history-width h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1.2em;
+    width: 100%;
+
+    animation: typing 3.5s steps(80), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid var(--color-white);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.header-div-history-width p {
+    opacity: 0;
+    animation: opacity 1.2s ease-in 3.5s forwards;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.header-div-history-width a img {
+    margin: 6em auto;
+    opacity: 0;
+    animation: opacityArrow 1.2s ease-in 5s forwards infinite alternate;
+}
+
+@keyframes opacityArrow {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.7;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 1250px) {
+    .portifolio-media-queries {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 868px) {
+    .header-div-principal-flex span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-div-history-width a img {
+        margin: 1em auto;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 360px) {
+    .header-div-history-width a img {
+        display: none;
+    }
+}
